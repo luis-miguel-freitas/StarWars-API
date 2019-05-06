@@ -1,0 +1,44 @@
+:root {
+  --mainColor: #ffde37;  /* YELLOW color of STAR WARS lettering */
+}
+
+@font-face {
+	font-family:"STARWARS";
+	src:url("../fonts/STARWARS.woff") format("woff");
+	font-weight:normal;
+	font-style:normal;
+}
+
+.spinner {
+  display: block;
+  text-indent: -9999px;
+  width: 40vh;
+  height: 32vh;
+  background: url(../images/Spinner.svg);
+  background-size: 40vh 32vh;
+}
+
+h1 {
+	font-family: 'STARWARS';
+	font-weight: 1000;
+  letter-spacing: 5px;
+  color: transparent;
+
+  -webkit-text-decoration-line: overline underline; /* Safari */
+  text-decoration-line: overline underline; 
+
+  text-shadow: 0px 3px 0px #b2a98f,
+               0px 14px 10px rgba(0,0,0,0.15),
+               0px 24px 2px rgba(0,0,0,0.1),
+               0px 34px 30px rgba(0,0,0,0.1);
+
+  -webkit-text-stroke: 2px var(--mainColor);
+  @supports not(-webkit-text-stroke: 2px red) {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  }
+}
