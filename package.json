@@ -1,5 +1,5 @@
 {
-  "name": "Starwars",
+  "name": "Starwars-API",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
